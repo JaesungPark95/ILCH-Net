@@ -1,23 +1,30 @@
-# ILCH-Net
+# Lithology Prediction Using ILCH-Net, LSTM, and AE Models
 
-Lithology Prediction Using ILCH-Net, LSTM, and AE Models
-This repository contains code for predicting missing lithological data from well-log sequences using three different deep learning models: ILCH-Net, LSTM, and Autoencoder (AE). The dataset used in this study is the Volve dataset, which is available on Equinor's site.
+This repository contains code for predicting missing lithological data from well-log sequences using three different deep learning models: **ILCH-Net**, **LSTM**, and **Autoencoder (AE)**. The dataset used in this study is the **Volve dataset**, which is available on Equinor's site.
 
-Models
+## Models
+
 The following models are implemented in this repository:
 
-1. ILCH-Net
-ILCH-Net is a deep learning model designed to predict missing well-log data by combining Convolutional Variational Autoencoders (CVAE) with an iterative prediction approach. This model utilizes both geological information and well-log sequences to improve prediction accuracy.
+### 1. **ILCH-Net (CVAE + LSTM)**
 
-Code: Model_ILCH-Net.py
-2. LSTM
-The LSTM model is used to predict missing data in time-series well-log sequences, leveraging Long Short-Term Memory (LSTM) networks to capture temporal dependencies.
+ILCH-Net is a deep-learning model that combines **Conditional Variational Autoencoders (CVAE)** with **Long Short-Term Memory (LSTM)** networks to predict missing well-log data. It refines predictions iteratively using geological constraints, achieving high accuracy even with incomplete data.
 
-Code: Model_LSTM.py
-3. Autoencoder (AE)
-The Autoencoder (AE) model is trained to learn a compressed representation of well-log sequences and predict missing data based on this representation.
+- Code: `Model_ILCH-Net.py`
 
-Code: Model_AE.py
-Data
-The Volve dataset used in this study is available via the Equinor website:
-https://www.equinor.com/news/archive/14jun2018-disclosing-volve-data
+### 2. **LSTM (Long Short-Term Memory)**
+
+The LSTM model predicts missing data in well-log sequences by leveraging **Long Short-Term Memory (LSTM)** networks, which capture temporal dependencies and are well-suited for sequential data.
+
+- Code: `Model_LSTM.py`
+
+### 3. **Autoencoder (AE)**
+
+The Autoencoder (AE) model learns a compressed representation of well-log sequences and predicts missing data based on this latent space representation.
+
+- Code: `Model_AE.py`
+
+## Data
+
+The Volve dataset used in this study is available via the Equinor website:  
+[https://www.equinor.com/news/archive/14jun2018-disclosing-volve-data](https://www.equinor.com/news/archive/14jun2018-disclosing-volve-data)
