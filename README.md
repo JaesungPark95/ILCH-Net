@@ -1,6 +1,6 @@
 # Lithology Prediction Using ILCH-Net, LSTM, and AE Models
 
-This repository contains code for predicting missing lithological data from well-log sequences using three different deep learning models: **ILCH-Net**, **LSTM**, and **Autoencoder (AE)**. The dataset used in this study is the **Volve dataset**, which is available on Equinor's site.
+This repository contains code for predicting missing lithological data from well-log sequences using three different deep learning models: **ILCH-Net**, **LSTM**, and **Autoencoder (AE)**. The dataset used in this project is the **Volve dataset**, which is available on Equinor's site.
 
 ## Models
 
