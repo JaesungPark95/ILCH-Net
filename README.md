@@ -24,6 +24,12 @@ The Autoencoder (AE) model learns a compressed representation of well-log sequen
 
 - Code: `Model_AE.py`
 
+### 4. **Iterative Autoencoder (Iter-AE)**
+
+The Iterative Autoencoder (Iter-AE) enhances the standard AE model by applying an iterative refinement process to improve the reconstruction of missing well-log data.
+
+- Code: `Model_Iter-AE.py`
+
 ## Data
 
 The Volve dataset used in this study is available via the Equinor website:  
